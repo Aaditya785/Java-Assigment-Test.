@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int r,s = 0;
+        
+        for(int i=N;i>0;i=i/10)          //121,12
+        {
+            r = i % 10;                  //1,2
+            s = s * 10 + r;              //10,
+        }
+        if(s == N)
+        {
+            System.out.print("true");
+        }
+        else
+        {
+            System.out.print("false");
+        }
+	}
+}
